@@ -1,17 +1,19 @@
-<?php session_start(); ?>
 <html>
+<script src="simpleimage.js"></script>
+<script src="uploadfg.js"></script>
+<link rel="stylesheet" type="text/css" href="styleit.css">
 <head>
   <h1>Jatin welcomes you to<br>
-      Green Screen merger in a webpage</h1>
+      Green Screen Background Changer in a Webpage</h1>
 </head>
 <body>
+  This is a website for changing the background of the green screen image you upload to the background you desire.
+  <br>
   <div id="one">
-  <a href="home.php">Home </a>
+  <a href="index.php">Home </a>
   <a href="login.php">Login/Sign Up </a>
   <a href="abs.php">About Us?</a>
-  </div><br>
-  This is a website for using filters on photos you upload.
-  <br>
+  </div>
   <canvas id="fgc"></canvas>
   <canvas id="bgc"></canvas>
   <canvas id="gsc"></canvas>
@@ -25,7 +27,4 @@
     <input type="button" value="Merge it" onclick="greenscreen()" id="gsmerge">
   </p>
 </body>
-<script src="simpleimage.js"></script>
-<script src="uploadfg.js"></script>
-<link rel="stylesheet" type="text/css" href="styleit.css">
 </html>
