@@ -1,0 +1,41 @@
+#head
+{
+  color:white;
+  border:1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color:black;
+  width:100%;
+  height:15%;
+}
+#text
+{
+  color:white;
+  border:1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color:black;
+  width:30%;
+  height:40%;
+}
+html
+{
+  font-family:Calibri;
+  background-image:linear-gradient(#B41717,#E14141);
+}
+#one
+{
+  border:1px solid black;
+  width:12%;
+  position: absolute;
+  right: 10px;
+  border:1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

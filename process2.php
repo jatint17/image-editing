@@ -1,6 +1,5 @@
 <html>
 <link rel="stylesheet" type="text/css" href="styleit.css">
-<h1>
 <?php session_start();
 $con=mysqli_connect('localhost','root','','demo',"3308");
 
@@ -17,9 +16,8 @@ else
 {
   $reg="insert into loginform(username,password) values ('$user','$pass')";
   mysqli_query($con,$reg);
-  echo "Reg success";
+  echo "Reg success, please log in to continue.";
+  include "login.php";
 }
-
 ?>
-</h1>
 </html>
