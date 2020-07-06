@@ -7,7 +7,16 @@
 </head>
 <body>
 <div id="one">
-  <a href="login.php">Login/Sign Up </a>
+  <?php
+  if(isset($_SESSION['user']))
+  {
+    echo "<a href='logout.php'>Logout</a>";
+  }
+  else
+  {
+    echo "<a href='login.php'>Login/Sign Up</a>";
+  }
+  ?>
   <a href="abs.php">About Us?</a>
   </div>
   <br>
@@ -16,3 +25,4 @@
   <br>
   
 </body>
+</html>

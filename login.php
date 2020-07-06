@@ -4,7 +4,7 @@
   </head>
 <body>
   <div id="logingoto">
-    <a href="home.php"> Home </a>
+    <a href="index.php"> Home </a>
   </div>
 Please sign up if you're a new user.<br>
   <div id="two">

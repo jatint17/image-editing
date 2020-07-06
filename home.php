@@ -3,17 +3,38 @@
 <script src="uploadfg.js"></script>
 <link rel="stylesheet" type="text/css" href="styleit.css">
 <head>
-  <h1>Jatin welcomes you to<br>
-      Green Screen Background Changer in a Webpage</h1>
-</head>
-<body>
+  <h1>
+  <?php session_start();
+  if(isset($_SESSION['user']))
+  {
+
+    echo "Jatin welcomes login to<br>
+      Green Screen Background Changer in a Webpage";
+    echo "</h1></head>
+    <body>
+      This is a website for changing the background of the green screen image you upload to the background you desire.
+      <br>
+      <div id='one'>
+      <a href='index.php'>Home </a>
+      <a href='logout.php'>Logout</a>
+      <a href='abs.php'>About Us?</a>
+      </div>";
+  }
+  else
+  {
+    echo "Jatin welcomes you to<br>
+    Green Screen Background Changer in a Webpage";
+  echo "</h1></head>
+  <body>
   This is a website for changing the background of the green screen image you upload to the background you desire.
   <br>
-  <div id="one">
-  <a href="index.php">Home </a>
-  <a href="login.php">Login/Sign Up </a>
-  <a href="abs.php">About Us?</a>
-  </div>
+  <div id='one'>
+  <a href='index.php'>Home </a>
+  <a href='login.php'>Login/Sign Up </a>
+  <a href='abs.php'>About Us?</a>
+  </div>";
+  }
+  ?>
   <canvas id="fgc"></canvas>
   <canvas id="bgc"></canvas>
   <canvas id="gsc"></canvas>
